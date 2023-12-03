@@ -1,0 +1,58 @@
+.user-fetch{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 250px;
+}
+.userId{
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+span{
+    font-size: 20PX;
+    padding: 20px;
+}
+button{
+    margin-top: 20px;
+}
+h2{
+    font-family: "Times New Roman", Times, serif;
+
+}
+.user-details{
+    padding-top: 30px;
+    justify-content: start;
+}
+
+/* Add these styles to your component's style file */
+
+.user-fetch {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .fetch-user {
+    margin-top: 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .user-fetch {
+      flex-direction: row;
+    }
+  
+    .fetch-user {
+      margin-top: 0;
+      margin-left: 20px;
+    }
+  }
+  
+  /* Display inputs below each other on smaller screens */
+  @media screen and (max-width: 767px) {
+    .form-group {
+      margin-bottom: 10px; /* Add spacing between form groups */
+    }
+  }
+  

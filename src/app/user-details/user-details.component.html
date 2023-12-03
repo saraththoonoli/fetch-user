@@ -1,0 +1,25 @@
+<div class="user-fetch">
+    <div>
+        <h2>All User Details</h2>
+        <button class="btn btn-success" (click)="getAllDetails()">Get All Details</button>
+        <ul>
+          <li *ngFor="let user of allUsers">{{ user.name }}</li>
+        </ul>
+      </div>
+      
+      <div class="fetch-user">
+        <h2>Fetch User Details by ID</h2>
+        <label class="form-label" for="userId"><span>USER ID</span></label>
+        <input class="form-control"  type="number" id="userId" [(ngModel)]="userId" /> &nbsp;
+        <button class="btn btn-primary" (click)="getUserDetails()">Fetch Details</button>
+    
+        <div class="user-details" *ngIf="userDetails">
+  
+          <p>Name: {{ userDetails.name }}</p>
+          <p>Email: {{ userDetails.email }}</p>
+          <p>Phone: {{ userDetails.phone }}</p>
+          <p>Website: {{ userDetails.website }}</p>
+
+        </div>
+      </div>
+</div>
